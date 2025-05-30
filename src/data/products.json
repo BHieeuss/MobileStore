@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 16 Pro Max",
+        "price": 24990000,
+        "description": "The latest iPhone with advanced features and stunning design.",
+        "images": [
+            "https://placehold.co/200x200?text=iPhone+16+Pro+Max",
+            "https://placehold.co/200x200?text=iPhone+16+Pro+Max+Back"
+        ],
+        "category": "smartphones",
+        "brand": "Apple",
+        "rating": 4.8,
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "name": "Galaxy S25 Ultra",
+        "price": 18990000,
+        "description": "Samsung's flagship smartphone with top-notch specifications.",
+        "images": [
+            "https://placehold.co/200x200?text=Galaxy+S25+Ultra",
+            "https://placehold.co/200x200?text=Galaxy+S25+Ultra+Back"
+        ],
+        "category": "smartphones",
+        "brand": "Samsung",
+        "rating": 4.7,
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "name": "POCO X7 Pro",
+        "price": 7990000,
+        "description": "A budget-friendly smartphone with great performance.",
+        "images": [
+            "https://placehold.co/200x200?text=POCO+X7+Pro",
+            "https://placehold.co/200x200?text=POCO+X7+Pro+Back"
+        ],
+        "category": "smartphones",
+        "brand": "Xiaomi",
+        "rating": 4.5,
+        "stock": 100
+    },
+    {
+        "id": 4,
+        "name": "Huawei Watch Fit 4",
+        "price": 2790000,
+        "description": "Smartwatch with fitness tracking and health monitoring features.",
+        "images": [
+            "https://placehold.co/200x200?text=Huawei+Watch+Fit+4",
+            "https://placehold.co/200x200?text=Huawei+Watch+Fit+4+Back"
+        ],
+        "category": "wearables",
+        "brand": "Huawei",
+        "rating": 4.6,
+        "stock": 75
+    },
+    {
+        "id": 5,
+        "name": "MacBook Pro 16",
+        "price": 49990000,
+        "description": "Powerful laptop for professionals with stunning Retina display.",
+        "images": [
+            "https://placehold.co/200x200?text=MacBook+Pro+16",
+            "https://placehold.co/200x200?text=MacBook+Pro+16+Back"
+        ],
+        "category": "laptops",
+        "brand": "Apple",
+        "rating": 4.9,
+        "stock": 20
+    },
+    {
+        "id": 6,
+        "name": "Dell XPS 13",
+        "price": 29990000,
+        "description": "Sleek and powerful laptop with a stunning display.",
+        "images": [
+            "https://placehold.co/200x200?text=Dell+XPS+13",
+            "https://placehold.co/200x200?text=Dell+XPS+13+Back"
+        ],
+        "category": "laptops",
+        "brand": "Dell",
+        "rating": 4.8,
+        "stock": 15
+    }
+]
