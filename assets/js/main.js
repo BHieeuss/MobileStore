@@ -1,10 +1,32 @@
 // Mobile menu toggle & theme switcher
 
 document.addEventListener('DOMContentLoaded', function () {
-  const menuBtn = document.getElementById('msMenuBtn');
-  const menu = document.getElementById('msMobileMenu');
-  const overlay = document.getElementById('msMobileMenuOverlay');
-  const closeBtn = document.getElementById('msMenuCloseBtn');
+  const headerHolder = document.getElementById('ms-header-placeholder');
+  const footerHolder = document.getElementById('ms-footer-placeholder');
+  const basePath = location.pathname.includes('/pages/') ? '..' : '.';
+
+  Promise.all([
+    headerHolder
+      ? fetch(`${basePath}/partials/header.html`)
+          .then((r) => r.text())
+          .then((html) => {
+            headerHolder.innerHTML = html;
+          })
+      : Promise.resolve(),
+    footerHolder
+      ? fetch(`${basePath}/partials/footer.html`)
+          .then((r) => r.text())
+          .then((html) => {
+            footerHolder.innerHTML = html;
+          })
+      : Promise.resolve(),
+  ]).then(initUI);
+
+  function initUI() {
+    const menuBtn = document.getElementById('msMenuBtn');
+    const menu = document.getElementById('msMobileMenu');
+    const overlay = document.getElementById('msMobileMenuOverlay');
+    const closeBtn = document.getElementById('msMenuCloseBtn');
 
   function openMenu() {
     menu.classList.add('open');
@@ -31,15 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.add('dark-mode');
     if (icon) icon.classList.replace('bi-moon', 'bi-sun');
   }
-  themeToggle && themeToggle.addEventListener('click', () => {
-    const isDark = document.body.classList.toggle('dark-mode');
-    if (icon) {
-      if (isDark) {
-        icon.classList.replace('bi-moon', 'bi-sun');
-      } else {
-        icon.classList.replace('bi-sun', 'bi-moon');
+    themeToggle && themeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark-mode');
+      if (icon) {
+        if (isDark) {
+          icon.classList.replace('bi-moon', 'bi-sun');
+        } else {
+          icon.classList.replace('bi-sun', 'bi-moon');
+        }
       }
-    }
-    localStorage.setItem('ms-theme', isDark ? 'dark' : 'light');
-  });
+      localStorage.setItem('ms-theme', isDark ? 'dark' : 'light');
+    });
+  }
 });
