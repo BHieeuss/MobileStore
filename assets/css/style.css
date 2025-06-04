@@ -371,3 +371,43 @@ body { background: #f5f6fa; }
     display: none !important;
   }
 }
+
+/* === Dark mode === */
+body.dark-mode {
+  background: #222;
+  color: #eee;
+}
+body.dark-mode .ms-header {
+  background: #333;
+  border-bottom-color: #444;
+}
+body.dark-mode .ms-nav-link,
+body.dark-mode .ms-header-link,
+body.dark-mode .ms-logo-text {
+  color: #eee;
+}
+body.dark-mode .ms-header-icon {
+  background: #444;
+  color: #eee;
+}
+body.dark-mode .ms-header-icon:hover {
+  background: #555;
+}
+body.dark-mode .ms-searchbar {
+  background: #333;
+}
+body.dark-mode .ms-search-input {
+  color: #eee;
+}
+body.dark-mode .ms-mobile-menu {
+  background: #2b2b2b;
+}
+body.dark-mode .ms-mobile-menu-link {
+  color: #eee;
+  border-bottom-color: #444;
+}
+body.dark-mode .ms-mobile-menu-link:hover,
+body.dark-mode .ms-mobile-menu-link:focus {
+  background: #444;
+  color: #fff;
+}
